@@ -1,6 +1,8 @@
-# Stack
+# Stack and Queue
 
-## operation
+## Stack
+
+### operation
 
 * add element
 
@@ -15,7 +17,7 @@ str.push("this");
 str.pop();
 ```
 
-# Queue
+## Queue
 
 * reverse order
 
@@ -38,4 +40,16 @@ Queue<String> pq = new PriorityQueue<>(new Comparator<String>() {
                 return 0;
             }
         });
+```
+
+* check if empty
+
+```java
+pq.isEmpty()
+```
+
+* pop element
+
+```java
+pq.poll()
 ```
