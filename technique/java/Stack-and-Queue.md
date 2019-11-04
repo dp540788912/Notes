@@ -19,17 +19,28 @@ str.pop();
 
 ## Queue
 
+* create a queue
+
+```java
+Queue<Integer> qx = new LinkedList<>();
+```
+
 * reverse order
 
 ```java
 Queue<String> pq = new PriorityQueue<>(26, Collections.reverseOrder())
+
 ```
 
 * add elements
 
+offer is better than add(), because when it exceeds the limit, add() raise an exception, while offer() returns false
+
 ```java
-pq.add("this")
+pq.offer("this")
 ```
+
+
 
 * customized priority queue
 
