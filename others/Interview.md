@@ -1,7 +1,8 @@
-## Tips helpful in interview 
+## Tips helpful in interview
 
 ## in order, pre-order, post-order traverse
 
+```
 depth first traversal:
         root
         /   \
@@ -11,7 +12,7 @@ preorder: root -> left -> right
 post-order: left -> right -> root 
 
 breath first traversal:
-
+```
 
 
 2. Different ways of dealing with hash collision 
