@@ -4,7 +4,7 @@
 
 - Ascii code graph
 
-![Ascii code graph](./image/ascii.png)
+![Ascii code graph](image/ascii.png)
 
 - [SSH tutotial](./SSH.md)
 
