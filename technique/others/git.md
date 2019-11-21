@@ -39,3 +39,12 @@ __push all to your remote branch__
 ```
 git push --all origin
 ```
+
+
+__store password and usename to avoid typing them everytime__
+
+```
+git config credential.helper store
+// then do push 
+```
+
