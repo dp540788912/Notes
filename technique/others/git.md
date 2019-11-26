@@ -11,7 +11,7 @@ git checkout origin/branch-name
 __delete a remote branch__
 ```
 git push -d <remote branch name>
-eg: git push -d origin/frankLee
+eg: git push -d origin frankLee
 ```
 
 __push a newly created local branch to remote__
@@ -45,6 +45,6 @@ __store password and usename to avoid typing them everytime__
 
 ```
 git config credential.helper store
-// then do push 
+// then do push
 ```
 
