@@ -22,7 +22,7 @@ git push -u origin frankLee
 __checkout a remote branch__
 
 ```
-git checkout -t <remote branch name>
+git checkout --track <remote branch name>
 ```
 
 __list all currently configured remote branch__
@@ -46,5 +46,11 @@ __store password and usename to avoid typing them everytime__
 ```
 git config credential.helper store
 // then do push
+```
+
+__push a new branch to remote__
+
+```
+git push -u origin new_branchx
 ```
 
