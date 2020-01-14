@@ -88,12 +88,45 @@ docker rm name/id/hashcode
 
 ## trap
 
-### slash 
+### slash \
 + in dockerfile, be careful when you use \ (backslash)
 ``` dockerfile
-    Run yum install sql \
-    mongo \
-    redis 
+Run yum install sql \dir1 
+ |
+ |---file1
+ |---file2
+ |---file3
+mongo \
+redis 
 ```
 stop now, one more bachslash may cause unpredictable problem as it runs 
 
+
+### COPY
+not actually like the bash syntax 
+will copy the content in a dolder instead of the whole folder, which means the dir name may be lost:
+
+```
+COPY dir1 /Dst
+```
+
+assume in dir1:
+```
+dir1 
+ |
+ |---file1
+ |---file2
+ |---file3
+```
+
+then in the Des:
+
+```
+Des 
+ |
+ |---file1
+ |---file2
+ |---file3
+```
+
+dd

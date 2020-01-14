@@ -13,3 +13,11 @@ status|address|account|pwd
 :-|:-|:-|:-
 internal|<http://192.168.10.64:8080/>|rice|map
 production|<http://192.168.0.161:8000> | rice | map
+
+
+
+## look up investment stratagy 
+
+```
+github rqalpha
+```
