@@ -15,4 +15,5 @@ mongodump -h 192.168.10.30 -u root -p root --port 27017 --authenticationDatabase
 
 ```
 mongorestore -h 192.168.10.30 -u root -p root --port 27017 --authenticationDatabase admin -d bond -c bond_sector ./bond_d_bak.ba
+
 ```

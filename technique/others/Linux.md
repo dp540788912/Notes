@@ -13,3 +13,9 @@ which docker
 sudo chown frank:frank /usr/bin/docker 
 ```
 
+
+## mkdir recursively 
+```
+mkdir -p /root/project/caoni 
+```
+if there is no parent dir, it will be created automatically with -p option
