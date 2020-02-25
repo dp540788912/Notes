@@ -21,3 +21,20 @@ production|<http://192.168.0.161:8000> | rice | map
 ```
 github rqalpha
 ```
+
+# kubectl 
+## get po about rqdata
+```
+kubectl get po -n rqdata
+```
+
+## get logs 
+```
+kubectl logs -n rqdata rqdatad2-http-new-574ff6c97f-bsljx
+```
+
+## get config file 
+```
+kubectl describe configmaps -n rqdata rqdatad2-http-new-config
+```
+

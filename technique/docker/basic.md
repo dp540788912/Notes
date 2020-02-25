@@ -130,3 +130,9 @@ Des
 ```
 
 dd
+
+
+## open a sql server
+```
+docker run -itd --restart always -e TZ=Asia/Shanghai -v /etc/localtime:/etc/localtime:ro -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 --name mysql mysql:5.7.23
+```

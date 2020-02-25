@@ -23,16 +23,18 @@ breath first traversal:
 
 
 
+## sql 进行表同一列的操作
 
+## 脚本语言对内核操作，shell或者python，比如说找出一个文件中邮箱出现次数最多的
 
-## for HUAWEI
+## prudential
 
-- 线程与进程间的区别   
-    - 线程与进程间的通讯方式
-
-- c++里的static
-- c++里的虚函数
-- tcp和udp报文是怎样生成的，如何通讯的
-- 虚拟内存，物理内存
-- 设计模式
-- 网络安全
+```
+1. 对http的各种方式post，put，delete等等的应用场景
+2. uri及url
+3. sql相关的各种操作
+4. uml表的看懂
+5. java 里面的concurrent，callable
+6. A<B extends C>这种格式
+7. 
+```
