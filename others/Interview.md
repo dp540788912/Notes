@@ -36,5 +36,5 @@ breath first traversal:
 4. uml表的看懂
 5. java 里面的concurrent，callable
 6. A<B extends C>这种格式
-7. 
+
 ```
