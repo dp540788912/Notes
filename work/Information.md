@@ -38,3 +38,20 @@ kubectl logs -n rqdata rqdatad2-http-new-574ff6c97f-bsljx
 kubectl describe configmaps -n rqdata rqdatad2-http-new-config
 ```
 
+
+## docker build
+```
+docker build --network host -t harbor.ricequant.com/test/factor_agent:2.0.0a6 --build-arg VERSION=2.0.0.a6 .
+```
+
+## pypi
+```
+python setup.py sdist upload -r rq
+```
+
+### install 
+
+```
+pip install  --extra-index-url https://ricequant:RiceQuant77@pypi.ricequant.com:8080/simple/
+
+```

@@ -27,3 +27,32 @@ calc_options: 因子检验，计算的配置
 - 测试环境192.168.10.53   root / Ricemap123
 - 因子测试：
     curl -X GET http://192.168.10.53:30080/api/v1/factors/test -H "cookie: session=f786eac0-e8f6-46ac-bcae-27fc583d4eb8" -H "Content-Type: application/json"
+
+
+
+## test 
+```
+- create one factor
+curl http://dev:10005/api/v1/factors -H "Content-Type:application/json" -d '{"name": "test4", "workspace": "1234", "uid": 100}' -X POST
+
+- get one factor
+curl http://127.0.0.1:5000/api/v1/factors/12
+
+- check list 
+curl http://127.0.0.1:5000/api/v1/factors -H "Content-Type:application/json" -d 
+
+
+- apply
+
+curl http://127.0.0.1:5000/api/v1/factors/12/release -H "Content-Type:application/json"
+
+```
+
+
+- build docekr images
+
+```
+docker build --network host -t harbor.ricequant.com/test/factor-agent:2.0.0a69 --build-arg FACTOR_VERSION=0.2.0 --build-arg AGENT_VERSION=2.0.0a69 .
+```
+
+curl -X POST http://192.168.10.53:30080/api/v1/factors -H "cookie:session=f786eac0-e8f6-46ac-bcae-27fc583d4eb8" -H "Content-Type: application/json" -d '{"code": "from rqfactor import“}' -d '{"name": "test", "config": {"pool": null}}'

@@ -54,3 +54,7 @@ __push a new branch to remote__
 git push -u origin new_branchx
 ```
 
+__push new branch to remote__
+```
+ git push --set-upstream origin citics_2019
+```

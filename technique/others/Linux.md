@@ -19,3 +19,10 @@ sudo chown frank:frank /usr/bin/docker
 mkdir -p /root/project/caoni 
 ```
 if there is no parent dir, it will be created automatically with -p option
+
+
+## check port usage 
+
+```
+sudo lsof -i -n -P | grep 5000
+```

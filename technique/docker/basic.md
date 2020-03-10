@@ -136,3 +136,21 @@ dd
 ```
 docker run -itd --restart always -e TZ=Asia/Shanghai -v /etc/localtime:/etc/localtime:ro -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 --name mysql mysql:5.7.23
 ```
+
+
+## Kubectl
+
+### get po about rqdata
+```
+kubectl get po -n rqdata
+```
+
+### get logs 
+```
+kubectl logs -n rqdata rqdatad2-http-new-574ff6c97f-bsljx
+```
+
+### get config file 
+```
+kubectl describe configmaps -n rqdata rqdatad2-http-new-config
+```
