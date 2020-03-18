@@ -58,3 +58,10 @@ __push new branch to remote__
 ```
  git push --set-upstream origin citics_2019
 ```
+
+__reset to a previous edition hardly__
+
+this will delete all the work you have done since then, be careful with the --hard arg
+```
+git reset --hard 38208ca4252982fbe28e0799f83df9055c56d29b
+```

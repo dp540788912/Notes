@@ -26,3 +26,14 @@ if there is no parent dir, it will be created automatically with -p option
 ```
 sudo lsof -i -n -P | grep 5000
 ```
+
+## nohup 
+```
+nohup rqdatad -c /root/rqdata-citis2019/internal.yaml  --port 16071 > my_out.txt 2> foo.err < /dev/null &
+```
+
+## check version 
+```
+uname -a
+```
+

@@ -59,7 +59,9 @@ java在程序和操作系统之间用了一个类似于中间件的东西，叫j
 
 所以docker对python来说是雪中送炭，对java来说是锦上添花
 
+## docker 的架构
 
-
-
-
+docker 建立在3个linux内核的基础上
+* namespace，相同类型模块使用公用的namespace，用于区别不同类型模块的同名类
+* 资源分块技术
+* 文件系统

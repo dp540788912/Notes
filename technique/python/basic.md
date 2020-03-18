@@ -38,3 +38,12 @@ sys.path.append(IMPORT_ROOT)
 ```
 Command + j = choose shortcut for if __name__ == "__main__"
 ```
+
+
+## loop with index 
+
+```python
+for i, date in enumerate(dates):
+    pass
+```
+
