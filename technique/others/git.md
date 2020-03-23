@@ -65,3 +65,4 @@ this will delete all the work you have done since then, be careful with the --ha
 ```
 git reset --hard 38208ca4252982fbe28e0799f83df9055c56d29b
 ```
+after doing reset, force push to the remote 

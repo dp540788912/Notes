@@ -47,3 +47,11 @@ for i, date in enumerate(dates):
     pass
 ```
 
+
+## throws exception then check the detaik 
+```python
+ except Exception:
+            import traceback
+            print(traceback.format_exc())
+            self.__dict__ = {}
+```
