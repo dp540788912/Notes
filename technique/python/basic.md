@@ -55,3 +55,19 @@ for i, date in enumerate(dates):
             print(traceback.format_exc())
             self.__dict__ = {}
 ```
+
+
+## arexit
+```python
+import atexit
+atexit.register(lambda: scheduler.shutdown())
+```
+the lambda func will be executed when the program terminates 
+
+## time time
+```python
+time.time()
+# convert to readable
+time.ctime(_)
+```
+Pythom time method time() returns the time as a floating point number expressed in seconds since the epoch, in UTC.
