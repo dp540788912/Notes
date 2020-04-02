@@ -58,7 +58,7 @@ docker build --network host -t harbor.ricequant.com/test/factor-agent:2.0.0a69 -
 curl -X POST http://192.168.10.53:30080/api/v1/factors -H "cookie:session=f786eac0-e8f6-46ac-bcae-27fc583d4eb8" -H "Content-Type: application/json" -d '{"code": "from rqfactor import“}' -d '{"name": "test", "config": {"pool": null}}'
 
 - open rqdatad
-```
+```bash
 nohup rqdatad -c /root/rqdata-citis2019/internal.yaml  --port 16071 > my_out.txt 2> foo.err < /dev/null &
 ```
 
