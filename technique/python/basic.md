@@ -71,3 +71,26 @@ time.time()
 time.ctime(_)
 ```
 Pythom time method time() returns the time as a floating point number expressed in seconds since the epoch, in UTC.
+
+- get timestamp in seconds
+```
+time.monotonic()
+```
+compared with time.time() this is less in memory 
+
+
+## safest method to check if dict can get a object
+
+```python
+monitor = object()
+val = dic.get('key', monitor)
+
+if val == monitor:
+    ...
+    ...
+    ...
+```
+
+it's the safest method
+
+

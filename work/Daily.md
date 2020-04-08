@@ -44,7 +44,7 @@ curl http://127.0.0.1:5000/api/v1/factors -H "Content-Type:application/json" -d
 
 - apply
 
-curl http://127.0.0.1:5000/api/v1/factors/12/release -H "Content-Type:application/json"
+curl http://0.0.0.0:5000/api/v1/factors/12/release -H "Content-Type:application/json"
 
 ```
 
