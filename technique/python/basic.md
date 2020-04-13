@@ -94,3 +94,13 @@ if val == monitor:
 it's the safest method
 
 
+## functiona tools
+
+### *partial
+```python
+base_convert = partial(int,base=2)
+base_convert('10010')
+18
+```
+to preset value for certain params
+
