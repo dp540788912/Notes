@@ -56,3 +56,37 @@ p: paste current line
 dd: delete current line 
 yy: copy current line 
 ```
+## shell script 
+```bash
+# 1. when a variable contains space, use double quotes, x="das ddf"
+
+```
+### grep 
+
+```
+grep -rni 'this' filename
+```
+-r recursive 
+-n show line number 
+-i ignore case 
+-e expression, can use mutiple times
+
+
+### expr
+```
+expr 1 + 3
+```
+
+out put will be 3, watch that there should be spaces between them
+
+
+## authentication and permission 
+
+```bash
+chmod 755 filename
+```
+7 = 4 + 2 + 1, means write, read, exec 
+you can use a+x means anyone can exec
+
+
+
