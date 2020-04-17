@@ -55,3 +55,11 @@ python setup.py sdist upload -r rq
 pip install  --extra-index-url https://ricequant:RiceQuant77@pypi.ricequant.com:8080/simple/
 
 ```
+
+## 预发布环境标配：
+```
+export RQ_ENV=production
+export RQ_CLOUD=pre
+export RQDATA_CONF=/etc/rq/rqdata.yaml
+export RQDATAC_CONF=tcp://rice:rice@172.18.0.17:16010
+```
