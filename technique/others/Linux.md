@@ -1,3 +1,5 @@
+# general
+
 ## change the user of a certain command 
 
 you can get rid of typing sudo every time 
@@ -37,6 +39,23 @@ nohup rqdatad -c /root/rqdata-citis2019/internal.yaml  --port 16071 > my_out.txt
 uname -a
 ```
 
+
+# Vim
+- config file of vim is /etc/vimrc
+- to customize vim, add ~/.vimrc and add lines 
+
+- command:
+```
+: set encoding=utf-8
+
+```
+
+- in normal mode
+```
+p: paste current line 
+dd: delete current line 
+yy: copy current line 
+```
 ## shell script 
 ```bash
 # 1. when a variable contains space, use double quotes, x="das ddf"
