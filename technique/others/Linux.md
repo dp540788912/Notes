@@ -51,7 +51,7 @@ grep -rni 'this' filename
 -n show line number 
 -i ignore case 
 -e expression, can use mutiple times
-
+-v exclude a pattern
 
 ### expr
 ```
@@ -71,3 +71,9 @@ you can use a+x means anyone can exec
 
 
 
+## update alias 
+```
+// change bash alias file 
+// type
+source ~/.bash
+```

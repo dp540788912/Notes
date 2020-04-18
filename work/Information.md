@@ -4,7 +4,7 @@
 
 address|account|pwd
 :---|:---|:---
-192.168.0.109|root|g8wg^#7dgk8
+192.168.0.109|root|z
 | |rice|84j84j302ijs3
 
 ## Jenkins serverr address
