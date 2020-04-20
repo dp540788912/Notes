@@ -112,4 +112,8 @@ this two could cause so fucking serious problems if you installed with pip
 what you need is:
 
 ```
-conda install 
+conda install pytables
+conda install h5py
+```
+
+
