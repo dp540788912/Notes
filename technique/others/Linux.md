@@ -96,3 +96,23 @@ you can use a+x means anyone can exec
 // type
 source ~/.bash
 ```
+
+
+## use stream as args 
+
+- xagrs
+```
+find / -name "dashuaibi" | xargs rm -f 
+```
+
+delete all the files from the find command 
+
+
+## unset 
+
+- delete env variable
+
+```
+unset var_Name
+
+```

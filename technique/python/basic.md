@@ -104,3 +104,12 @@ base_convert('10010')
 ```
 to preset value for certain params
 
+
+
+## h5py and tables
+
+this two could cause so fucking serious problems if you installed with pip
+what you need is:
+
+```
+conda install 

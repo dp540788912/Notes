@@ -15,3 +15,13 @@ df.to_dict('records')
 ```
 
 
+## print out of a dataframe 
+
+```
+pd.set_option("max_columns", 999)
+pd.set_option("max_rows", 5)
+pd.set_option('display.width', 1000)
+```
+
+display.width stands for how many columns displayded in one row
+max columns stands for total columns displayed
