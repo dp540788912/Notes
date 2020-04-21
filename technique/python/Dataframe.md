@@ -25,3 +25,27 @@ pd.set_option('display.width', 1000)
 
 display.width stands for how many columns displayded in one row
 max columns stands for total columns displayed
+
+
+## pandas create new columns based on other colmumns 
+
+```python
+"""
+         a   b
+yo      aa  a1
+yoyo    bb  b2
+yoyoyo  cc  c1
+"""
+# df = above 
+# if you want to concat a and b
+
+df.apply(lambda row: row['a'] + row['b'], axis=1)
+
+# result should be:
+"""
+yo        aaa1
+yoyo      bbb2
+yoyoyo    ccc1
+"""
+
+```
