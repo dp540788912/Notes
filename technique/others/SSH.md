@@ -49,6 +49,9 @@ true && echo OK
 false && echo OK
 # [no output]
 ```
+command1 & command2 means:
+    command1 runs in the background and command2 runs in foreground immediately 
+    
 
 
 
