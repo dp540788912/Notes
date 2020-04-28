@@ -34,6 +34,11 @@ sudo lsof -i -n -P | grep 5000
 nohup rqdatad -c /root/rqdata-citis2019/internal.yaml  --port 16071 > my_out.txt 2> foo.err < /dev/null &
 ```
 
+this can be written in bash_aliases
+```
+nohup sh /home/frank/App/pycharm-2019.2.3/bin/pycharm.sh  >/dev/null 2>&1 &
+```
+
 ## check version 
 ```
 uname -a
@@ -116,3 +121,15 @@ delete all the files from the find command
 unset var_Name
 
 ```
+
+# file system 
+
+- /etc
+    - configure file 
+
+- /var
+    - log
+
+- /dev 
+    - device 
+
