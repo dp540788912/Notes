@@ -154,3 +154,52 @@ kubectl logs -n rqdata rqdatad2-http-new-574ff6c97f-bsljx
 ```
 kubectl describe configmaps -n rqdata rqdatad2-http-new-config
 ```
+
+
+
+## installing docker in new machines 
+
+```
+sudo apt install docker 
+```
+
+
+
+## add current user to docker group  
+
+```
+sudo usermod -aG docker $USER
+```
+
+then you need to change your group id to docker
+
+```
+newgrp docker 
+```
+
+then you can access docker
+
+
+## doecker procedure 
+### run docker 
+
+- Run your image as a container
+Run the following command to start a container based on your new image
+
+```
+docker run --publish 8000:8080 --detach --name bb bulletinboard:1.0
+```
+
+There are a couple of common flags here:
+> --publish asks Docker to forward traffic incoming on the host’s port 8000 to the container’s port 8080. Containers have their own private set of ports, so if you want to reach one from the network, you have to forward traffic to it in this way. Otherwise, firewall rules will prevent all network traffic from reaching your container, as a default security posture.
+
+> --detach asks Docker to run this container in the background.
+
+> --name specifies a name with which you can refer to your container in subsequent commands, in this case bb.
+
+### remove docker 
+
+```
+docker rm --force bb
+```
+

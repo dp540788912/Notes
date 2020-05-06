@@ -50,9 +50,10 @@ watch this --authenticationDatabase admin, there will be error if neglected
 
 
 # language support 
-## pymongo delete items and count 
+## pymongo delete items and count items
 
 ```python
 result = client.db.col.delete_many({"_id": "aas"})
 print(result.delete_count)
 ```
+

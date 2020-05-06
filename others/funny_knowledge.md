@@ -1,0 +1,2 @@
+- jira originated from "gozila" from Japan
+- yaml, yaml 'ant markdown language, recursive name style 

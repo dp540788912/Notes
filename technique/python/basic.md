@@ -1,3 +1,32 @@
+# basic
+
+## pickle 
+- dump python object to binary and loads it as object 
+
+```python
+import pickle 
+a = [1,2,4,6,7]
+ap = pickle.dumps(a)
+ar = pickle.loads(ap)
+
+a == ar 
+```
+
+
+
+## python debug
+
+- basic use 
+
+```python
+import pdb; pdb.set_trace()
+```
+this will prompt in a command line and share context with current program
+
+## build wheel 
+```bash
+python3 setup.py sdist bdist_wheel
+```
 ## change download source temporarily
 
 add the line below every time install by using pip 
@@ -32,6 +61,29 @@ if not os.path.exists(dirname):
 IMPORT_ROOT = os.path.dirname(os.path.dirname(__file__))
 sys.path.append(IMPORT_ROOT)
 ```
+
+
+## join
+
+- put an interval between every two adjacent elements in a list
+
+```python
+l = [i for i in "abcd"]
+" interval ".join(l)
+# output:
+# a interval b interval c interval d
+
+```
+
+## change environment variable 
+
+```python
+os.environ["DEBUSSY"] = "1"
+
+```
+
+it should be noticed that env variable is string, so don't use int 
+
 
 
 # shortcut 
@@ -76,7 +128,7 @@ Pythom time method time() returns the time as a floating point number expressed 
 ```
 time.monotonic()
 ```
-compared with time.time() this is less in memory 
+compared with time.time() this is less in memory
 
 
 ## safest method to check if dict can get a object
@@ -117,3 +169,41 @@ conda install h5py
 ```
 
 
+# tricky part of python 
+
+- Variables shadows in loop
+```python
+i = 3
+for i in range(19):
+    pass
+
+print(i)
+
+```
+
+in the case above. i in loop will shadow i defined before
+
+- python fails to recognize '~' in path 
+
+```python
+import sys  
+sys.path.append("~/Desktop")
+# It's wrong, python doesn't know your home dir
+
+sys.path.append("/home/yourid/Desktop")
+# use full absolute path is prefered
+
+```
+
+
+## join two paths
+
+usually use os
+```python
+import os 
+os.path.join(dir1, dir2)
+```
+
+## compile problems
+
+1. one possible solution is to change python or package version 

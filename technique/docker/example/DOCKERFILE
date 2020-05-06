@@ -1,0 +1,23 @@
+FROM centos
+
+MAINTAINER frank <dengpan@mycapital.net>
+
+WORKDIR /root/project/package
+
+RUN yum update -y\
+&&  yum install -y gcc gcc-c++ make wget unzip \
+&&  wget https://www.python.org/ftp/python/3.5.1/Python-3.5.1.tgz \
+&&  tar xzf python-3.5.1.tgz \
+&&  cd Python-3.5.1 \
+&&  ./configure --prefix=/usr/local \
+&&  make altinstall \
+&&  yum install -y python3-libs python3-devel python3-pip \
+
+&&  pip3.5 install pip -U \
+&&  pip3.5 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+
+RUN wget https://wiki.mycapital.net/mycapital/upload/my-platform-src.zip \
+    unzip my-platform-src.zip \
+    pip3.5 install ./*.tar.gz \
+    echo "unzip demo_strategy.zip && cd demo_strategy && python3.5 st.py && python3.5 compile.py st.py" > test.sh
+    

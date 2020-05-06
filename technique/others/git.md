@@ -6,7 +6,7 @@ git merge --abort
 __check out a remote repository__
 ```
 git fetch 
-git checkout origin/branch-name
+git checkout -t origin/branch-name
 ```
 __delete a remote branch__
 ```

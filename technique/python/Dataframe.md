@@ -49,3 +49,44 @@ yoyoyo    ccc1
 """
 
 ```
+
+
+## loop dataframe 
+
+```python 
+import pandas as pd 
+df = pd.DataFrame()
+
+"""
+df:
+       a    b  c
+w     11  111  1
+wc    22  222  2
+wcn   33  333  3
+wcnn  44  444  4
+
+"""
+```
+
+- loop1:
+
+```python 
+for i in df:
+    print(i)
+"""
+loop columns, results will be:
+a
+b
+c
+"""
+```
+
+
+## numpy check nan
+
+- use np.isna to check an if element in an iterable item is nan
+- use np.all to check if all the element in an iterable item is true
+
+```python
+np.all(np.isnan([1,2,3,4, float("nan"), np.nan]))
+```
