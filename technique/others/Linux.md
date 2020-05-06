@@ -180,3 +180,11 @@ cat sample | grep -E p\{2}
 cat sample|grep "a\+t"
 
 ```
+
+- prompt after rm 
+
+```
+rm -i {file}
+```
+
+this command will prompt when delete file
