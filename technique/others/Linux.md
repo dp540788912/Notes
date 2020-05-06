@@ -1,4 +1,5 @@
 # general
+----
 
 ## change the user of a certain command 
 
@@ -46,6 +47,8 @@ uname -a
 
 
 # Vim
+----
+
 - config file of vim is /etc/vimrc
 - to customize vim, add ~/.vimrc and add lines 
 
@@ -123,6 +126,8 @@ unset var_Name
 ```
 
 # file system 
+----
+
 
 - /etc
     - configure file 
@@ -133,3 +138,45 @@ unset var_Name
 - /dev 
     - device 
 
+
+## unrar 
+
+parameters
+
+| command | description |
+:-|:-|
+e  | extract without path 
+x  | extract with path
+
+| switch | description |
+:- | :- | 
+-p[password] | enter password(right after -p, no space needed, this is so fucking shit)
+-r | recursive 
+
+- example
+
+```bash
+unrar e -r -o- -pwww.jinshuyuan.net  ./*.rar ~/Desktop/ETF5_all/ 
+```
+
+
+## regular expression in shell 
+
+```bash
+
+# list all lines contains 'a'
+cat sample | grep a
+
+# start with 'a'
+cat sample | grep ^a
+
+# end with 't'
+cat sample | grep t$
+
+# appears exactly 2 times
+cat sample | grep -E p\{2}
+
+# 'a' precesdes 't'
+cat sample|grep "a\+t"
+
+```

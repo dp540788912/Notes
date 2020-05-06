@@ -117,3 +117,15 @@ conda install h5py
 ```
 
 
+# tricky part of python 
+
+```python
+i = 3
+for i in range(19):
+    pass
+
+print(i)
+
+```
+
+in the case above. i in loop will shadow i defined before

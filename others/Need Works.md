@@ -9,3 +9,7 @@
     - solutions to diploma
     
 
+- deploy
+    - dns 
+    - kubenates virtual network
+    - 
