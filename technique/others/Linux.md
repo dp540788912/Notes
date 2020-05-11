@@ -46,6 +46,13 @@ uname -a
 ```
 
 
+## sed
+
+- delete a line with specific string 
+```bash
+sed -i '/pattern to match/d' ./infile
+```
+
 
 
 # Vim
@@ -190,3 +197,16 @@ rm -i {file}
 ```
 
 this command will prompt when delete file
+
+
+# shortcut
+
+## basic
+
+
+## terminator(ubuntu)
+
+- shift + crtl = s + c
+- s + c + e, s + c + o, split window vertically or horizontally
+- s + c + w, close window
+- s + c + t, open new tab

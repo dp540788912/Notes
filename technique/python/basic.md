@@ -1,3 +1,9 @@
+# basic
+
+## build wheel 
+```bash
+python3 setup.py sdist bdist_wheel
+```
 ## change download source temporarily
 
 add the line below every time install by using pip 
@@ -119,6 +125,7 @@ conda install h5py
 
 # tricky part of python 
 
+- Variables shadows in loop
 ```python
 i = 3
 for i in range(19):
@@ -129,3 +136,15 @@ print(i)
 ```
 
 in the case above. i in loop will shadow i defined before
+
+- python fails to recognize '~' in path 
+
+```python
+import sys  
+sys.path.append("~/Desktop")
+# It's wrong, python doesn't know your home dir
+
+sys.path.append("/home/yourid/Desktop")
+# use full absolute path is prefered
+
+```
