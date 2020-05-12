@@ -54,6 +54,20 @@ sed -i '/pattern to match/d' ./infile
 ```
 
 
+## touch with general expression 
+```
+touch dir1/file{1...100}
+```
+
+- create 100 files 
+
+
+## rsync 
+
+* use algorithm to sync files, only send the different part from one end to another, can be used both remotly and locally
+
+
+
 
 # Vim
 ----
