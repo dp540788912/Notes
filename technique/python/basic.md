@@ -40,6 +40,29 @@ sys.path.append(IMPORT_ROOT)
 ```
 
 
+## join
+
+- put an interval between every two adjacent elements in a list
+
+```python
+l = [i for i in "abcd"]
+" interval ".join(l)
+# output:
+# a interval b interval c interval d
+
+```
+
+## change environment variable 
+
+```python
+os.environ["DEBUSSY"] = "1"
+
+```
+
+it should be noticed that env variable is string, so don't use int 
+
+
+
 # shortcut 
 ```
 Command + j = choose shortcut for if __name__ == "__main__"
