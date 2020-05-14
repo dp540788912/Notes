@@ -171,3 +171,12 @@ sys.path.append("/home/yourid/Desktop")
 # use full absolute path is prefered
 
 ```
+
+
+## join two paths
+
+usually use os
+```python
+import os 
+os.path.join(dir1, dir2)
+```

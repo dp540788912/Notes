@@ -49,3 +49,17 @@ breath first traversal:
 5. 缓存穿透，缓存雪崩和缓存击穿
 6. 微服务，微架构，rpc，各种架构
 7。
+
+
+## tencent prepare 
+
+1. tcp/ip， process
+2. 安全协议
+3. 攻击方式
+4. 数据库，锁的级别
+6. 头文件链接
+7. c++虚函数如何处理diamond问题
+8. c++新特性，以及smartpointer处理垃圾回收
+9. select, poll, epoll, 用法，区别
+10. 上次的四道问题
+11. graph
