@@ -55,7 +55,7 @@ breath first traversal:
 
 1. tcp/ip， process
 2. 安全协议
-3. 攻击方式
+3. 攻击方式ddos, sql 注入及解决方式
 4. 数据库，锁的级别
 6. 头文件链接
 7. c++虚函数如何处理diamond问题
@@ -63,3 +63,4 @@ breath first traversal:
 9. select, poll, epoll, 用法，区别
 10. 上次的四道问题
 11. graph
+12. 分布式的算法和概念 paxos， synod， wuu
