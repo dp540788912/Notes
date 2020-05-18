@@ -16,6 +16,13 @@ which docker
 sudo chown frank:frank /usr/bin/docker 
 ```
 
+## check storage usage linux 
+
+```bash
+df -H
+```
+
+
 
 ## mkdir recursively 
 ```
