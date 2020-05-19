@@ -22,7 +22,13 @@ sudo chown frank:frank /usr/bin/docker
 df -H
 ```
 
+## check directory disk space usage
 
+```
+du -sh /dir
+```
+- du means disk usage?
+     - niubility
 
 ## mkdir recursively 
 ```
