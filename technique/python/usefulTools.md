@@ -23,3 +23,17 @@ def tqdm(*args, **kwargs):
 
 - douban source
     -  https://pypi.doubanio.com/simple
+
+
+
+## h5py
+
+```python
+import h5py
+import tables
+f = h5py.File('/data/hd/etf_option/tick_h5/10001312.h5', 'a')
+print(f.keys())
+```
+
+something like that 
+it should be noted that if OSError happens, it might be permission error

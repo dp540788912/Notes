@@ -1,5 +1,18 @@
 # general
 ----
+## zip a folder
+
+```
+zip -r [output_file] documents
+```
+
+## unzip all the zip files in a directory
+
+```
+unzip '*.zip' -d dest
+```
+
+
 
 ## change the user of a certain command 
 
@@ -82,7 +95,7 @@ touch dir1/file{1...100}
 
 
 
-# Vim
+## Vim
 ----
 
 - config file of vim is /etc/vimrc
