@@ -208,6 +208,13 @@ x  | extract with path
 unrar e -r -o- -pwww.jinshuyuan.net  ./*.rar ~/Desktop/ETF5_all/ 
 ```
 
+## install package deb 
+```
+dpkg -i path/to/file
+```
+
+
+
 
 ## regular expression in shell 
 
@@ -250,3 +257,21 @@ this command will prompt when delete file
 - s + c + e, s + c + o, split window vertically or horizontally
 - s + c + w, close window
 - s + c + t, open new tab
+
+
+## install virtual machine 
+
+- first install virtualbox 
+```
+sudo apt install virtualbox 
+```
+
+- then download ios file from official site (important)
+
+- set up virtualbox, run 
+
+- install guest additions, to calibrate seamless mode and full screen mode 
+```
+sudo apt-get install virtualbox-guest-additions-iso
+
+```
