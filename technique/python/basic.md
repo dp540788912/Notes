@@ -180,3 +180,7 @@ usually use os
 import os 
 os.path.join(dir1, dir2)
 ```
+
+## compile problems
+
+1. one possible solution is to change python or package version 

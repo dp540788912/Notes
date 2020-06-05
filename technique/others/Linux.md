@@ -275,3 +275,17 @@ sudo apt install virtualbox
 sudo apt-get install virtualbox-guest-additions-iso
 
 ```
+
+
+
+## change theme 
+
+[gnome-tweak-tools](https://www.cyberciti.biz/faq/change-theme-in-ubuntu/)
+
+## apt install -y 
+
+-y means yes as default. it will not prompt
+
+## less
+
+1. 

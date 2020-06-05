@@ -18,5 +18,12 @@ pip install cython
 ```
 
 
+## error when install package 
 
-## version comparison error 
+- OSerror
+    - for example, when install mysql-config(pip), OSerror is trigered because OS system has no mysql dev tool, in this case
+    - solution: install these tools in OS first 
+
+- compile error
+    - for example, installing package using c api
+    - solution, install cython or python-dev-tools
