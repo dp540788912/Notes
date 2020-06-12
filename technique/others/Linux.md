@@ -129,6 +129,9 @@ grep -rni 'this' filename
 -e expression, can use mutiple times
 -v exclude a pattern
 
+it should be noted that -r option could check all files in given directory, very useful 
+
+
 ### expr
 ```
 expr 1 + 3
@@ -288,4 +291,35 @@ sudo apt-get install virtualbox-guest-additions-iso
 
 ## less
 
-1. 
+1. n for next, and shift + n for previous 
+ 
+
+## cut
+
+cur -d "delimiter" if (field name)
+
+file is like:
+```
+aaaa vvvvv ddddd
+bbbbb dsad sgfgfg
+cccc fdfd cdfs
+```
+
+```
+cut -d " " -f 1 file:
+```
+
+out put will be 
+```
+aaaa
+bbbbb
+cccc
+```
+
+## ubuntu command line proxy tools 
+
+```
+    proxychains3 wget http://dadasdasrscfsffsdfsdfsdf
+```
+
+wget command will use proxy

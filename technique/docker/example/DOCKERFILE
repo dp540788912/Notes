@@ -1,13 +1,18 @@
-FROM centos:lastest
+FROM centos
 
 MAINTAINER frank <dengpan@mycapital.net>
 
 WORKDIR /root/project/package
 
-RUN yum update \
-&&  yum install -y https://centos7.iuscommunity.org/ius-release.rpm \
-&&  yum install -y python35u python35u-libs python35u-devel python35u-pip \
-&&  yum install -y gcc gcc-c++ make unzip \
+RUN yum update -y\
+&&  yum install -y gcc gcc-c++ make wget unzip \
+&&  wget https://www.python.org/ftp/python/3.5.1/Python-3.5.1.tgz \
+&&  tar xzf python-3.5.1.tgz \
+&&  cd Python-3.5.1 \
+&&  ./configure --prefix=/usr/local \
+&&  make altinstall \
+&&  yum install -y python3-libs python3-devel python3-pip \
+
 &&  pip3.5 install pip -U \
 &&  pip3.5 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
