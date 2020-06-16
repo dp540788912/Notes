@@ -100,6 +100,7 @@ touch dir1/file{1...100}
 
 - config file of vim is /etc/vimrc
 - to customize vim, add ~/.vimrc and add lines 
+- G to forward to bottom line 
 
 - command:
 ```
@@ -225,9 +226,7 @@ dpkg -i path/to/file
 
 # list all lines contains 'a'
 cat sample | grep a
-
-# start with 'a'
-cat sample | grep ^a
+t
 
 # end with 't'
 cat sample | grep t$
@@ -308,8 +307,8 @@ cccc fdfd cdfs
 ```
 cut -d " " -f 1 file:
 ```
-
 out put will be 
+
 ```
 aaaa
 bbbbb
@@ -323,3 +322,13 @@ cccc
 ```
 
 wget command will use proxy
+
+## telnet 
+
+shut down telnet in terminal 
+
+```
+ctrl + ]
+or simple type q
+
+```
