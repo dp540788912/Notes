@@ -12,6 +12,13 @@ zip -r [output_file] documents
 unzip '*.zip' -d dest
 ```
 
+## pgrep 
+
+```
+pgrep redis-server 
+```
+
+directly display the process id
 
 
 ## change the user of a certain command 
