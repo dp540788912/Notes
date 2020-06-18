@@ -262,7 +262,7 @@ this command will prompt when delete file
 
 ## terminator(ubuntu)
 
-- shift + crtl = s + c
+- define shift + crtl = s + c
 - s + c + e, s + c + o, split window vertically or horizontally
 - s + c + w, close window
 - s + c + t, open new tab
