@@ -64,3 +64,5 @@ breath first traversal:
 10. 上次的四道问题
 11. graph
 12. 分布式的算法和概念 paxos， synod， wuu
+13. linux 操作
+14. 重点：分布式的算法复习
