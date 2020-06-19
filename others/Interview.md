@@ -66,3 +66,5 @@ breath first traversal:
 12. 分布式的算法和概念 paxos， synod， wuu
 13. linux 操作
 14. 重点：分布式的算法复习
+15. 系统设计模式, 大型系统设计的时候要考虑什么
+16. database集群
