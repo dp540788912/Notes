@@ -22,6 +22,28 @@ production|<http://192.168.0.161:8000> | rice | map
 github rqalpha
 ```
 
+# kubectl 
+## get po about rqdata
+```
+kubectl get po -n rqdata
+```
+
+## get logs 
+```
+kubectl logs -n rqdata rqdatad2-http-new-574ff6c97f-bsljx
+```
+
+## get config file 
+```
+kubectl describe configmaps -n rqdata rqdatad2-http-new-config
+```
+
+
+## docker build
+```
+docker build --network host -t harbor.ricequant.com/test/factor_agent:2.0.0a6 --build-arg VERSION=2.0.0.a6 .
+```
+
 ## pypi
 ```
 python setup.py sdist upload -r rq
@@ -32,5 +54,13 @@ python setup.py sdist upload -r rq
 ```
 pip install  --extra-index-url https://ricequant:RiceQuant77@pypi.ricequant.com:8080/simple/
 
+```
+
+## 预发布环境标配：
+```
+export RQ_ENV=production
+export RQ_CLOUD=pre
+export RQDATA_CONF=/etc/rq/rqdata.yaml
+export RQDATAC_CONF=tcp://rice:rice@172.18.0.17:16010
 ```
 

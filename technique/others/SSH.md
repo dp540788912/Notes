@@ -31,48 +31,13 @@ then exit server, next time it will not request a password
 
 * if you are asked to enter a password to make unlock your private key, just enter the passphase you set after -p 
 
-* difference between && and ; when run bash 
 
-; means two commands run irrespectively
-
-```bash 
-true ; echo OK
-# OK
-false; echo OK
-# OK
+## copy id from local
+```
+pbcopy < ~/.ssh/id_rsa.pub
 ```
 
-&& means when command1 failed, command 2 will not run
-```bash
-true && echo OK
-# OK
-false && echo OK
-# [no output]
+## copy rsa to remote ssh site 
 ```
-command1 & command2 means:
-    command1 runs in the background and command2 runs in foreground immediately 
-    
-
-
-
-## SSH script 
-
-- one line command 
-
-```bash 
- ssh myusername@remotehost 'ls -lha'
+ssh-copy-id root@192.168.10.53 
 ```
-
-- multiple line commands
-
-```bash
-ssh -t myusername@remotehost << "ENDSSH"
-cd /home/myusername
-ls -lha
-ENDSSH
-```
-
-
-
-
-
