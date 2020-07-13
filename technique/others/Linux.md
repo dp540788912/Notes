@@ -1,5 +1,21 @@
 # general
 ----
+
+## static link lib
+- in linux, it's always .a .so
+    - .so --> dynamic 
+    - .a --> static 
+- g++ -c hello.cpp 
+    - don't execute link, only to static file
+- g++ hellp.cpp speak.cpp -o result
+    - link two source file to a single executable file
+
+```bash
+# 静态链接将所有文件，将所有相关依赖文件.o打包成一个可知性文件
+# 动态库不会在编译时链接进目标代码，而是运行时才被载入
+```
+
+
 ## zip a folder
 
 ```

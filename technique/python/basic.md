@@ -1,5 +1,14 @@
 # basic
 
+## python debug
+
+- basic use 
+
+```python
+import pdb; pdb.set_trace()
+```
+this will prompt in a command line and share context with current program
+
 ## build wheel 
 ```bash
 python3 setup.py sdist bdist_wheel
@@ -105,7 +114,7 @@ Pythom time method time() returns the time as a floating point number expressed 
 ```
 time.monotonic()
 ```
-compared with time.time() this is less in memory 
+compared with time.time() this is less in memory
 
 
 ## safest method to check if dict can get a object

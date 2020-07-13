@@ -7,7 +7,7 @@
 __all__ = ['a', 'b']
 ```
 
-- \__eq__()
+- \__eq__
 ```python
 # class function, define ==
 class apple:
@@ -21,7 +21,7 @@ class apple:
 ```
 
 
-- \__repr()
+- \__repr__
 
 print(obj) will call this function _repr__ first, if this method failed 
 print may hang for a long time, please watch the fucking up
