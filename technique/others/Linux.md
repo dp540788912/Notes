@@ -1,5 +1,13 @@
 # general
 ----
+## fg 
+
+- go back to your previous progress on a process 
+for example
+```bash
+# you shut down a progress by ctr + z
+# then you can awake it by using fg 
+```
 
 ## static link lib
 - in linux, it's always .a .so
@@ -75,6 +83,8 @@ if there is no parent dir, it will be created automatically with -p option
 
 ## check port usage 
 
+- -P can show process info, if you want to kill a process, use this 
+- close a port listened by a process 
 ```
 sudo lsof -i -n -P | grep 5000
 ```
@@ -355,3 +365,5 @@ ctrl + ]
 or simple type q
 
 ```
+
+## 

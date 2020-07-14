@@ -1,5 +1,19 @@
 # basic
 
+## pickle 
+- dump python object to binary and loads it as object 
+
+```python
+import pickle 
+a = [1,2,4,6,7]
+ap = pickle.dumps(a)
+ar = pickle.loads(ap)
+
+a == ar 
+```
+
+
+
 ## python debug
 
 - basic use 
