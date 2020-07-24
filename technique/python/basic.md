@@ -1,5 +1,24 @@
 # basic
 
+## KeyboardInterrupt
+
+- It inherits from BaseException, which is also inherited by Exception 
+    which means, only catch Exception cann't catch KeyboardInterrupt correctly.
+    This is because you don't want to mess up with your main program
+
+- correct practice
+
+```python
+try:
+    main()
+except KeyboardInterrupt:
+    # do stuff 
+    pass
+except Exception:
+    # do stuff
+    pass
+```
+
 ## pickle 
 - dump python object to binary and loads it as object 
 

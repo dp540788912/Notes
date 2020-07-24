@@ -1,3 +1,56 @@
+## git 
+
+__change default editor to vim__
+
+git config --global core.editor "vim"
+
+
+__use git rebase to merge multiple commit to one__
+
+
+1. git rebase -i HEAD~n (n is the number of commit you want to include, HEAD~1 is the commit before HEAD)
+2. it will prompt in a editor: 
+```
+pick 84e78850e add cron job for factor, need more detail
+pick 61e0f5963 use common path
+pick 0407d883f debug
+pick fd47af306 add save path
+pick b1120a5d0 api modification
+pick 55bd18853 add return fields
+```
+change this to 
+```
+pick e9951b980 amend part of detal
+squash 84e78850e add cron job for factor, need more detail
+squash 61e0f5963 use common path
+squash 0407d883f debug
+squash fd47af306 add save path
+squash b1120a5d0 api modification
+squash 55bd18853 add return fields
+```
+save and quit 
+3. it will prompt you in another editor interface
+```
+# This is the 1st commit message:
+
+add api
+
+# This is the commit message #2:
+
+add api
+
+# This is the commit message #3:
+
+amend part of detal
+
+add cron job for factor, need more detail
+
+```
+change the message to whatever you want 
+
+4. save and quit 
+you are done
+
 __abort merge__
 ```
 git merge --abort

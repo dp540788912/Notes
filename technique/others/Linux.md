@@ -129,6 +129,40 @@ touch dir1/file{1...100}
 
 
 ## Vim
+
+### advanced operations
+
+- edit each line at the beginning in group
+
+```
+1. crtl + v to enter block visual mode (in pycharm, it is replaced to ctrl + shift + v)
+2. capital 'I' to insert, lower case 'c' to replace, capital 'A' to append
+3. press ESC to apply the change  
+```
+
+before:
+```
+pick 84e78850e add cron job for factor, need more detail
+pick 61e0f5963 use common path
+pick 0407d883f debug
+pick fd47af306 add save path
+pick b1120a5d0 api modification
+pick 55bd18853 add return fields
+```
+
+after use 'c' to replace 
+```
+squash 84e78850e add cron job for factor, need more detail
+squash 61e0f5963 use common path
+squash 0407d883f debug
+squash fd47af306 add save path
+squash b1120a5d0 api modification
+squash 55bd18853 add return fields
+
+```
+
+
+
 ----
 
 - config file of vim is /etc/vimrc
@@ -366,4 +400,23 @@ or simple type q
 
 ```
 
-## 
+# TCP and UDP 
+
+```md
+Process of TCP server
+
+- :socket create socket obj 
+- :bind set up AF_INET(ip protocol), sockstream(TCP), and port
+- :listen listen on the port, you will get a listen socket, which is different from client socket that you will obtain later 
+- :accept on the port, block the process, it will return the client_socket
+- :recv: start to recieve data from client end
+- :in python, client needs to shut down client socket to indicate the data exchange is over 
+- :you can close listen socket once you establish a connection with client
+- :you can obtain information about client 
+
+```
+
+- htons, htonl, and etc.
+    - this kind of function convert host byte order to network byteorder
+        - eg. short is 16bit integer, whereas long is 32bit integer, the order is called some fucking "big-endian", "little-endian", don't need to dig too deep
+
