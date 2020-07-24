@@ -1,5 +1,18 @@
 ## git 
 
+__when you regret after you did "git reset --hard "__
+git will clear your commit after a month
+
+you can still get your commit back even after you hard reset those 
+
+```bash
+git reflog # this will show your history commit, find the commit you  want to go to 
+git reset --hard 1df23ddf # just a little taste
+```
+So don't worry about some shitty operation
+
+say it out loud: Git niubility 
+
 __change default editor to vim__
 
 git config --global core.editor "vim"
