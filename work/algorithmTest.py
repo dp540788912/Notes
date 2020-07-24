@@ -35,3 +35,107 @@ if __name__ == "__main__":
 """
 
 
+"""permutation
+def recursive_add(ans_arr, selection, cur, visited: set, limit):
+    if len(cur) == limit:
+        ans_arr.append(cur)
+        return
+    for ch in selection:
+        if ch not in visited:
+            visited.add(ch)
+            recursive_add(ans_arr, selection, cur + ch, visited, limit)
+            visited.remove(ch)
+
+
+if __name__ == "__main__":
+    ans = []
+    select = "13689"
+    for i in range(1, len(select)+ 1):
+        recursive_add(ans, select, "", set(), i)
+    print(ans)
+
+"""
+
+"""
+class Node:
+    def __init__(self, v):
+        self.val = v
+        self.next = None
+    
+    def print(self):
+        print(self.val)
+        itr = self.next
+        while itr:
+            print(itr.val)
+            itr = itr.next
+
+
+def recursive(root, last):
+    if root.next is None:
+        root.next = last
+        return root
+    
+    ans = recursive(root.next, root)
+    root.next = last
+    return ans
+    
+
+if __name__ == "__main__":
+    root = Node(0)
+    head = root
+    for i in range(10):
+        tmp = root
+        root.next = Node(i)
+        root = root.next
+    new = recursive(head, None)
+    new.print()
+    # head.print()
+"""
+
+
+# """
+class Node:
+    def __init__(self, v):
+        self.val = v
+        self.next = None
+    
+    def print(self):
+        print(self.val)
+        itr = self.next
+        while itr:
+            print(itr.val)
+            itr = itr.next
+def merge(n1, n2):
+    head = Node(-1)
+    cur = head
+    while n1 and n2:
+        if n1.val <= n2.val:
+            cur.next = n1
+            n1 = n1.next
+        else:
+            cur.next = n2
+            n2 = n2.next
+        cur = cur.next
+    
+    if n1:
+        cur.next = n1
+    if n2:
+        cur.next = n2
+    
+    return head.next
+
+
+if __name__ == "__main__":
+    head1 = Node(0)
+    head2 = Node(0)
+
+    cur1 = head1
+    cur2 = head2
+    for i in range(1,10,2):
+        cur1.next = Node(i)
+        cur1 = cur1.next
+        cur2.next = Node(i+1)
+        cur2 = cur2.next
+    
+    new_head = merge(head1, head2)
+    new_head.print()
