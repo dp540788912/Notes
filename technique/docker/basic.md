@@ -203,3 +203,11 @@ There are a couple of common flags here:
 docker rm --force bb
 ```
 
+
+## docker run 
+
+- --network host:
+    this will make docker use host's ip and port directly, -p is useless then
+
+- -u root:
+    run command as root user
