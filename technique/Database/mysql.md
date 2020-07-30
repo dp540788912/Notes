@@ -10,5 +10,9 @@ If host is set to 127.0.0.1, then the client is forced to use TCP/IP.
 from slqalchemy import create_engine
 
 engine = create_engine("mysql://root:123@localhost:3306/database")
-engine.execute("SELECT  * from table_name")
+engine.execute("SELECTs  * from table_name")
 ```
+
+## having and where 
+
+having come with groupby, otherwise where is normal
