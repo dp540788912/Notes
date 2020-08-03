@@ -382,6 +382,11 @@ bbbbb
 cccc
 ```
 
+## swap 
+
+used when RAM run out of memory 
+it's related to virtual memory technique, it should be considered later 
+
 ## ubuntu command line proxy tools 
 
 ```
@@ -434,6 +439,10 @@ obj =========>   Class 0xfc1c1f3d
 2、如果内部有虚函数的话，每个对象都有保有一个虚函数表
 与指针类无关，直接调用对象的类中的虚函数表，由此实现多态
 
-3、普通函数的载入顺序一般在virtual之前，比如父类有个虚函数a，自类有个同名实函数a，父指针指向实例化子对象，调用a引用的是子函数里的
+3、普通函数的载入顺序一般在virtual之前，比如父类有个虚函数a，自类有个同名实函数a，父指针指向实例化子对象，调用a引用的是子函数里的实函数a
+
+顺序：
+Base.true_method --> Derive.true_method --> Derive.virtual --> base.virtual
 
 ```
+
