@@ -1,3 +1,8 @@
+# Table of content 
+1. [basic](#basic)
+2. [shortcut](#shortcut)
+3. [tricky part of python](#tricky\ part\ of\ python)
+
 # basic
 
 ## KeyboardInterrupt
@@ -65,15 +70,7 @@ use the '/root/....' format, fucking dump python interpreter
 ## when you want to open a file in a certain dir
 
 check if there is dir existing, if not, create one 
-```python
-filename = ...
-dirname = os.path.dirname(filename)
-if not os.path.exists(dirname):
-    os.makedirs(dirname)
-```
-
-## r, u, b, f
-
+```pythonmethodName
 
 ## get the path of current folder 
 ```python
@@ -226,3 +223,9 @@ os.path.join(dir1, dir2)
 ## compile problems
 
 1. one possible solution is to change python or package version 
+
+##  \__new__ and \__init__
+
+- __\__new\____ always happens before __\__init____, __\__new\____ is used for create new instance while __\__init____ is used to initialize new instance
+
+- __\__new\____ is static class, and __\__new\____ must be called after instance has been created 
