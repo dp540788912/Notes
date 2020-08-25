@@ -1,5 +1,32 @@
 # general
 ----
+
+## set up printer 
+
+[printer](https://www.linuxbabe.com/ubuntu/set-up-cups-print-server-ubuntu-bonjour-ipp-samba-airprint)
+
+## memeory use black technique
+
+```bash
+ps -e -orss=,args= |awk '{print $1 " " $2 }'| awk '{tot[$2]+=$1;count[$2]++} END {for (i in tot) {print tot[i],i,count[i]}}' | sort -n
+```
+
+## compgen
+
+- list commands
+```
+-c # list all the commands you can run 
+-a # list all the alias you can run 
+```
+
+## cpu info 
+
+- list all the cpu information
+```
+lscpu 
+```
+
+
 ## fg 
 
 - go back to your previous progress on a process 
@@ -129,6 +156,11 @@ touch dir1/file{1...100}
 
 
 ## Vim
+
+### find you are not root user when you want to save result 
+```
+:w !sudo tee %
+```
 
 ### advanced operations
 
@@ -374,7 +406,7 @@ cccc fdfd cdfs
 ```
 cut -d " " -f 1 file:
 ```
-out put will be 
+out put will be `
 
 ```
 aaaa
