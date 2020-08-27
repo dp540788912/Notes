@@ -211,3 +211,10 @@ docker rm --force bb
 
 - -u root:
     run command as root user
+
+
+## run docker as non-root user 
+
+```
+
+```

@@ -5,6 +5,9 @@ __revert a commit__
 [understand revert](https://gitirc.eu/howto/revert-a-faulty-merge.html)
 
 
+__git symbol, range selection__
+
+[git tool](https://git-scm.com/book/en/v2/Git-Tools-Revision-Selection)
 
 __when you regret after you did "git reset --hard "__
 
