@@ -1,5 +1,32 @@
 # general
 ----
+
+## set up printer 
+
+[printer](https://www.linuxbabe.com/ubuntu/set-up-cups-print-server-ubuntu-bonjour-ipp-samba-airprint)
+
+## memeory use black technique
+
+```bash
+ps -e -orss=,args= |awk '{print $1 " " $2 }'| awk '{tot[$2]+=$1;count[$2]++} END {for (i in tot) {print tot[i],i,count[i]}}' | sort -n
+```
+
+## compgen
+
+- list commands
+```
+-c # list all the commands you can run 
+-a # list all the alias you can run 
+```
+
+## cpu info 
+
+- list all the cpu information
+```
+lscpu 
+```
+
+
 ## fg 
 
 - go back to your previous progress on a process 
@@ -129,6 +156,11 @@ touch dir1/file{1...100}
 
 
 ## Vim
+
+### find you are not root user when you want to save result 
+```
+:w !sudo tee %
+```
 
 ### advanced operations
 
@@ -374,13 +406,18 @@ cccc fdfd cdfs
 ```
 cut -d " " -f 1 file:
 ```
-out put will be 
+out put will be `
 
 ```
 aaaa
 bbbbb
 cccc
 ```
+
+## swap 
+
+used when RAM run out of memory 
+it's related to virtual memory technique, it should be considered later 
 
 ## ubuntu command line proxy tools 
 
@@ -419,4 +456,25 @@ Process of TCP server
 - htons, htonl, and etc.
     - this kind of function convert host byte order to network byteorder
         - eg. short is 16bit integer, whereas long is 32bit integer, the order is called some fucking "big-endian", "little-endian", don't need to dig too deep
+
+
+
+## c++ session 
+
+- virtual function 
+
+```
+1、c++ 类有个存储地址，对象调用方法会直接调用这个地址的方法
+
+obj =========>   Class 0xfc1c1f3d
+
+2、如果内部有虚函数的话，每个对象都有保有一个虚函数表
+与指针类无关，直接调用对象的类中的虚函数表，由此实现多态
+
+3、普通函数的载入顺序一般在virtual之前，比如父类有个虚函数a，自类有个同名实函数a，父指针指向实例化子对象，调用a引用的是子函数里的实函数a
+
+顺序：
+Base.true_method --> Derive.true_method --> Derive.virtual --> base.virtual
+
+```
 

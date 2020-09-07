@@ -29,3 +29,14 @@ this is a package that can be used
 ```
 
 ```
+
+## Making list hashable
+
+```
+a = [1,2,3,4]
+s = {tuple(a): "list value"}
+
+```
+use tuple, because it's immutable
+
+

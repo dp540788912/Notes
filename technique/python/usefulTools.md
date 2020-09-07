@@ -15,6 +15,16 @@ def tqdm(*args, **kwargs):
 - a progress bar tools, really awesome
 
 
+## snakeviz 
+
+- [Python function runtime visulized tool: snakeViz](https://jiffyclub.github.io/snakeviz/)
+- usage 
+```bash
+python -m cProfile -o program.prof my_program.py
+snakeviz program.prof
+
+```
+
 
 
 ## change pip source to douban source

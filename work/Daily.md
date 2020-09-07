@@ -18,7 +18,7 @@ workspace:
 
 confg: 因子跟踪
 calc_options: 因子检验，计算的配置
-
+```
 
 ## 开发环境
 - rquser: http://192.168.10.53:30200/admin/login
@@ -62,3 +62,47 @@ curl -X POST http://192.168.10.53:30080/api/v1/factors -H "cookie:session=f786ea
 nohup rqdatad -c /root/rqdata-citis2019/internal.yaml  --port 16071 > my_out.txt 2> foo.err < /dev/null &
 ```
 
+
+## case brainstorm
+### case #80 #125
+
+- api: /api/v1/platform/monitor/strategy/event/<sid>
+- api: /api/v1/platform/monitor/strategy/result/sid
+
+- parameters
+```
+strategy_id: int
+# s_id in table "strategy_event_track"
+```
+
+- return fields (data need split page)
+```
+{
+    "code": [0-?]
+    "data":[
+        dict of s_id(sytategy_id), trading_date, day_night...
+    ]
+}
+```
+- logic
+```
+with sc:
+    strategy = sc.filter(
+        this.strategy_id == strategy_id
+    ).order_by(
+        done_time
+    ).offset(size*page).limit(size)
+    
+    if not strategy:
+        error
+
+    for s in strategy:
+        list.append(s.to_dict)
+```
+
+
+- logic 2:
+```
+with sc:
+    strategy = sc.filter(s_id).order_by(task_date).offset(page*size).limit()
+```

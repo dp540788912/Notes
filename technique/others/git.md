@@ -1,6 +1,16 @@
 ## git 
 
+__revert a commit__
+
+[understand revert](https://gitirc.eu/howto/revert-a-faulty-merge.html)
+
+
+__git symbol, range selection__
+
+[git tool](https://git-scm.com/book/en/v2/Git-Tools-Revision-Selection)
+
 __when you regret after you did "git reset --hard "__
+
 git will clear your commit after a month
 
 you can still get your commit back even after you hard reset those 
@@ -11,7 +21,7 @@ git reset --hard 1df23ddf # just a little taste
 ```
 So don't worry about some shitty operation
 
-say it out loud: Git niubility 
+say it out loud: Git niubi
 
 __change default editor to vim__
 
