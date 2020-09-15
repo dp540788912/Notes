@@ -1,6 +1,14 @@
 # general
 ----
 
+## remove files except certain files
+
+```
+rm -v !("file1" | "file2")
+```
+- -v means verbose, print log 
+
+
 ## set up printer 
 
 [printer](https://www.linuxbabe.com/ubuntu/set-up-cups-print-server-ubuntu-bonjour-ipp-samba-airprint)
@@ -414,6 +422,15 @@ bbbbb
 cccc
 ```
 
+* an example 
+
+```
+sudo kill -f $(ps aux | grep python | tr -s ' ' | cut -d " " -f2 | tail -n 7)
+```
+
+- tr -s means squzee charater with repeated sequence to a single occurrence of that character 
+
+
 ## swap 
 
 used when RAM run out of memory 
@@ -478,3 +495,13 @@ Base.true_method --> Derive.true_method --> Derive.virtual --> base.virtual
 
 ```
 
+## yum 更新源
+
+```
+mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup
+curl -o /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
+sed -i "/mirrors.aliyuncs.com/d"  /etc/yum.repos.d/CentOS-Base.repo
+sed -i "/mirrors.cloud.aliyuncs.com/d"  /etc/yum.repos.d/CentOS-Base.repo
+yum clean all
+yum makecache
+```
