@@ -165,7 +165,8 @@ touch dir1/file{1...100}
 
 ## Vim
 
-### find you are not root user when you want to save result 
+### find you are not root user when you want to save result
+write to readonly file forcely when you forget to open vim in sudo mode
 ```
 :w !sudo tee %
 ```
