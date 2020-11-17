@@ -1,8 +1,20 @@
 # general
 ----
 
+## delete default route
+
+```
+sudo route del default gw 172.20.10.1 enxee2ce213d911
+```
+
+
 ## sudo netstat -plnt
+
 get listening port
+```
+sudo netstat -plnt
+```
+
 
 ## remove files except certain files
 
