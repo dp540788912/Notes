@@ -1,6 +1,9 @@
 # general
 ----
 
+## sudo netstat -plnt
+get listening port
+
 ## remove files except certain files
 
 ```
