@@ -5,6 +5,25 @@
 
 # basic
 
+## contextmanager 
+
+```
+location ^~ /api/v1/platform/internal/config/future_risk_account {
+        proxy_http_version 1.1;
+        proxy_pass http://192.168.4.55:18887; 
+}
+location ^~ /api/v1/platform/file_upload {
+        proxy_http_version 1.1;
+        proxy_pass http://127.0.0.1:16010
+}
+
+location ^~ /api/v1/platform/risk/publish {
+        proxy_http_version 1.1;
+        proxy_pass http://127.0.0.1:16010
+}
+
+```
+
 ## KeyboardInterrupt
 
 - It inherits from BaseException, which is also inherited by Exception 
@@ -67,9 +86,12 @@ in some situation, the system can't recognize path like '~/folder1/folder2'
 use the '/root/....' format, fucking dump python interpreter 
 ```
 
-## when you want to open a file in a certain dir
-
-check if there is dir existing, if not, create one 
+## when you want to open a file in a certain dirasync def some_async_generator(<arguments>):
+            <setup>
+            try:
+                yield <value>
+            finally:
+                <cleanup>
 ```pythonmethodName
 
 ## get the path of current folder 
@@ -107,9 +129,12 @@ it should be noticed that env variable is string, so don't use int
 Command + j = choose shortcut for if __name__ == "__main__"
 ```
 
-
-## loop with index 
-
+async def some_async_generator(<arguments>):
+            <setup>
+            try:
+                yield <value>
+            finally:
+                <cleanup>
 ```python
 for i, date in enumerate(dates):
     pass

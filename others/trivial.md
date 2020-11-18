@@ -14,5 +14,3 @@ goal:
 1. coding every day, no less than 100 line code per day including comments
 2. at least one algorithm(leetcode) one day, including database problem
 3. Operating system, network programming, database (sql, nosql), one topic perday
-
-
