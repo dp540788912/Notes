@@ -1,6 +1,5 @@
 FROM centos
 
-MAINTAINER frank <dengpan@mycapital.net>
 
 WORKDIR /root/project/package
 
@@ -12,7 +11,6 @@ RUN yum update -y\
 &&  ./configure --prefix=/usr/local \
 &&  make altinstall \
 &&  yum install -y python3-libs python3-devel python3-pip \
-
 &&  pip3.5 install pip -U \
 &&  pip3.5 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 

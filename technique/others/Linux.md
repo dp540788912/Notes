@@ -7,6 +7,12 @@
 sudo route del default gw 172.20.10.1 enxee2ce213d911
 ```
 
+## package is broken 
+
+```
+sudo apt-get purge mongodb-org*
+```
+remove them 
 
 ## sudo netstat -plnt
 

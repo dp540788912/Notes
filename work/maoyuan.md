@@ -30,3 +30,7 @@ quanttest| quant+10 | platform
 stock_test | st@ck021 | 
 futures_test| future$021 | 
 
+## important info
+
+1. day: 0
+   night: 1
