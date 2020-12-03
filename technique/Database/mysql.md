@@ -4,6 +4,17 @@ If host is set to localhost, then a socket or pipe is used.
 If host is set to 127.0.0.1, then the client is forced to use TCP/IP.
 ```
 
+## mysql check table size in a database
+
+```mysql
+SELECT table_name AS "Table",
+ROUND(((data_length + index_length) / 1024 / 1024), 2) AS "Size (MB)"
+FROM information_schema.TABLES
+WHERE table_schema = "<database_name>"
+ORDER BY (data_length + index_length) DESC;
+```
+
+
 ## mysqldump
 So many options in this list
 

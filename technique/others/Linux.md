@@ -181,7 +181,9 @@ touch dir1/file{1...100}
 
 * use algorithm to sync files, only send the different part from one end to another, can be used both remotly and locally
 
+## install wine 
 
+[install-wine-on-ubuntu](https://askubuntu.com/questions/214081/error-processing-libc6i386-and-libtinfo5i386-while-trying-to-install-anything)
 
 
 ## Vim
@@ -439,6 +441,7 @@ cut -d " " -f 1 file:
 out put will be `
 
 ```
+
 aaaa
 bbbbb
 cccc
@@ -452,6 +455,7 @@ sudo kill -f $(ps aux | grep python | tr -s ' ' | cut -d " " -f2 | tail -n 7)
 
 - tr -s means squzee charater with repeated sequence to a single occurrence of that character 
 
+this is very niubi
 
 ## swap 
 
