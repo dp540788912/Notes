@@ -1,6 +1,8 @@
 # general
 ----
 
+
+
 ## delete default route
 
 ```
@@ -174,7 +176,7 @@ sed -i '/pattern to match/d' ./infile
 touch dir1/file{1...100}
 ```
 
-- create 100 files 
+- create 100 files # 
 
 
 ## rsync 
@@ -271,8 +273,7 @@ expr 1 + 3
 
 out put will be 3, watch that there should be spaces between them
 
-
-## authentication and permission 
+# 
 
 ```bash
 chmod 755 filename
@@ -457,6 +458,15 @@ sudo kill -f $(ps aux | grep python | tr -s ' ' | cut -d " " -f2 | tail -n 7)
 
 this is very niubi
 
+
+combinng sed, select row and line:
+
+```bash
+docker ps -a | cut -d " " -f 1 | sed  -n '2,6p'
+```
+
+
+
 ## swap 
 
 used when RAM run out of memory 
@@ -531,3 +541,12 @@ sed -i "/mirrors.cloud.aliyuncs.com/d"  /etc/yum.repos.d/CentOS-Base.repo
 yum clean all
 yum makecache
 ```
+
+
+# systemctl 
+
+- check full log 
+
+```
+
+```/dev/sda5

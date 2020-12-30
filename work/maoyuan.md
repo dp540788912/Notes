@@ -34,3 +34,23 @@ futures_test| future$021 |
 
 1. day: 0
    night: 1
+
+
+
+## tips 
+
+strategy table
+
+- strategy table, is_test, query table and check if there
+- papertrading date is useless. An indicator to mark when backtest starts. A kind of method to prevnt cheating
+
+
+- ev, 日间因子，日内因子
+
+node|strategy_type|type
+:---|:---|:---
+ev | "26" |日间因子 
+ev | "" | ev
+back_test | "26" | 日内因子
+ 
+ 
