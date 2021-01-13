@@ -1,12 +1,20 @@
 # general
 ----
 
+
+
 ## delete default route
 
 ```
 sudo route del default gw 172.20.10.1 enxee2ce213d911
 ```
 
+## package is broken 
+
+```
+sudo apt-get purge mongodb-org*
+```
+remove them 
 
 ## sudo netstat -plnt
 
@@ -168,14 +176,16 @@ sed -i '/pattern to match/d' ./infile
 touch dir1/file{1...100}
 ```
 
-- create 100 files 
+- create 100 files # 
 
 
 ## rsync 
 
 * use algorithm to sync files, only send the different part from one end to another, can be used both remotly and locally
 
+## install wine 
 
+[install-wine-on-ubuntu](https://askubuntu.com/questions/214081/error-processing-libc6i386-and-libtinfo5i386-while-trying-to-install-anything)
 
 
 ## Vim
@@ -263,8 +273,7 @@ expr 1 + 3
 
 out put will be 3, watch that there should be spaces between them
 
-
-## authentication and permission 
+# 
 
 ```bash
 chmod 755 filename
@@ -433,6 +442,7 @@ cut -d " " -f 1 file:
 out put will be `
 
 ```
+
 aaaa
 bbbbb
 cccc
@@ -445,6 +455,16 @@ sudo kill -f $(ps aux | grep python | tr -s ' ' | cut -d " " -f2 | tail -n 7)
 ```
 
 - tr -s means squzee charater with repeated sequence to a single occurrence of that character 
+
+this is very niubi
+
+
+combinng sed, select row and line:
+
+```bash
+docker ps -a | cut -d " " -f 1 | sed  -n '2,6p'
+```
+
 
 
 ## swap 
@@ -521,3 +541,12 @@ sed -i "/mirrors.cloud.aliyuncs.com/d"  /etc/yum.repos.d/CentOS-Base.repo
 yum clean all
 yum makecache
 ```
+
+
+# systemctl 
+
+- check full log 
+
+```
+
+```/dev/sda5

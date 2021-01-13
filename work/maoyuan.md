@@ -14,13 +14,6 @@ exmail|dengpan@mycapital.net|dp_IDmaoyuan
     - EV, dynamic config, environment variabl        
 
 
-## Command 
-
-- rsync to server:
-    - sshpass -p fools_day_124@0401 rsync /home/frank/project/bss_server_main/strategy_upload rss@192.168.30.100:frank/
-
-
-
 ## account and password
 
 server|username|pwd|comment
@@ -28,3 +21,36 @@ server|username|pwd|comment
 192.168.10.116|rss| U1M#OWvdLRTp
 192.168.30.100|rss| oct_eleven#124@1101
 119.23.46.51 |rss | Web_server#OCT@2011|阿里云域名服务器
+
+
+## quant平台测试账户密码更改
+username|pwd|comment
+:---|:---|:---
+quanttest| quant+10 | platform
+stock_test | st@ck021 | 
+futures_test| future$021 | 
+
+## important info
+
+1. day: 0
+   night: 1
+
+
+
+## tips 
+
+strategy table
+
+- strategy table, is_test, query table and check if there
+- papertrading date is useless. An indicator to mark when backtest starts. A kind of method to prevnt cheating
+
+
+- ev, 日间因子，日内因子
+
+node|strategy_type|type
+:---|:---|:---
+ev | "26" |日间因子 
+ev | "" | ev
+back_test | "26" | 日内因子
+ 
+ 

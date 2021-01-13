@@ -5,7 +5,16 @@
 
 # basic
 
-## contextmanager 
+## celery 
+
+- delay and apply_async 
+
+```
+- delay is preconfigured and simpler 
+- apply_async can be more flexible
+```
+
+## nginx  
 
 ```
 location ^~ /api/v1/platform/internal/config/future_risk_account {

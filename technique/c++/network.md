@@ -33,3 +33,14 @@ epoll没有最大监听限制，会形成一种规模效应
 ```
 
 select 的本质其实还是很像os的多任务管理系统
+
+
+## how router works in a packet 
+
+[how-router-works](http://www.firewall.cx/networking-topics/routing/181-routing-process.html)
+
+
+## check network card 
+```
+sudo lshw -class network -short
+```
