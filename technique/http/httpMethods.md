@@ -9,3 +9,10 @@
 ## POST
 
 - more secure than GET
+
+
+
+## POST and PUT
+
+- POST is not idemponent, eg: x++ 
+- PUT is idemponent, eg: x = 5

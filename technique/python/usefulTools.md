@@ -1,4 +1,52 @@
 
+## pydantic
+
+- logic 
+
+### with pre = True
+
+* only given values from outside exists
+
+validation will not start
+
+you can change values to affect the actual fields
+
+withou pre=True
+
+validation will be called 
+
+eg:
+```python
+class StrategyValidationSchema(StrategyCreate):
+    r_create_user_id: int = Field(...)
+    r_update_user_id: int = 0
+    start_date: str = ""
+
+    # underscore_private_attrs
+    _detail_to_table: dict = {
+        # field name in detail -> field name in table
+        "start": "start_date",
+        "end": "end"
+
+    }
+
+    @root_validator(pre=True)
+    def pull_detail_to_model(cls, values):
+        for k, v in cls._detail_to_table.items():
+            if k in values['detail']:
+                values[v] = values['detail'][k]
+        return values
+
+    @validator("r_update_user_id", pre=True, always=True)
+    def init_update_user(cls, v, values):
+        if v == 0:
+            return values['r_create_user_id']
+
+    class Config:
+        underscore_attrs_are_private = True
+
+```
+
 ## tqdm
 
 ```python

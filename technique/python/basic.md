@@ -5,6 +5,30 @@
 
 # basic
 
+
+## importlib, walkpackage
+
+```python
+import importlib
+import pkgutil
+import endpoints
+{"day": true, "end": "20500101", "desc": "", "name": "t0_f_v4tar_202009301402", "noints.__path__, endpoints.__name__ + '.'):
+    pass
+```
+
+- function walk_package to walk package
+
+```python
+def walk_packgae(path_to_search, module_name_represented_in_result):
+    pass
+
+
+```
+
+
+
+
+
 ## celery 
 
 - delay and apply_async 
