@@ -5,6 +5,11 @@
 
 # basic
 
+## file descriptor, fd, fsync, flush 
+
+f.flush copy cache in python to OS
+
+f.fsync actuallu writes to disk 
 
 ## importlib, walkpackage
 

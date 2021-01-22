@@ -7,7 +7,6 @@
 
 * only given values from outside exists
 
-validation will not start
 
 you can change values to affect the actual fields
 
@@ -29,7 +28,6 @@ class StrategyValidationSchema(StrategyCreate):
         "end": "end"
 
     }
-
     @root_validator(pre=True)
     def pull_detail_to_model(cls, values):
         for k, v in cls._detail_to_table.items():
@@ -42,7 +40,7 @@ class StrategyValidationSchema(StrategyCreate):
         if v == 0:
             return values['r_create_user_id']
 
-    class Config:
+    class Config
         underscore_attrs_are_private = True
 
 ```

@@ -13,3 +13,6 @@
 2、针对规划每一步，具体去实现，可以不用急，但是一定要早
 
 
+## how to be excellent on your work
+
+1. 
