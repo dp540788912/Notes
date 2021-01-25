@@ -99,3 +99,12 @@ it should be noted that if OSError happens, it might be permission error
 
 ### find in path
     ctrl + shift + f is "search a word in all files"
+
+
+## pytest 
+
+### shows stdout in passed test
+
+```
+pytest test.py -rP
+```
