@@ -54,3 +54,10 @@ ev | "" | ev
 back_test | "26" | 日内因子
  
  
+
+ ## websites
+
+ git http://192.168.1.12:8000/root/public_documents/blob/develop/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/Python%E6%80%A7%E8%83%BD/Json%E5%BA%93%E6%B5%8B%E8%AF%95.md
+ email https://mail.qiye.163.com/js6/main.jsp
+ v2 https://docs.qq.com/sheet/DRmV0R2Jia05IbWRh?tab=4k9ruh&_t=1612162501510
+ v2 trace https://docs.qq.com/sheet/DSldoVXVVa0RFcHZM?tab=ow3llb
