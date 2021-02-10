@@ -1,5 +1,11 @@
 ## git 
 
+__force reset to remote HEAD__
+
+```
+ git reset --hard origin/develop 
+```
+
 __revert a commit__
 
 [understand revert](https://gitirc.eu/howto/revert-a-faulty-merge.html)
@@ -60,11 +66,7 @@ add api
 
 # This is the commit message #2:
 
-add api
-
-# This is the commit message #3:
-
-amend part of detal
+add apiremote detal
 
 add cron job for factor, need more detail
 

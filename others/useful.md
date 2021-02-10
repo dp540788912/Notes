@@ -10,3 +10,9 @@ there are a lot of types of interrupt
 when you want to ends a process, a signal is sent to process 
 
 if you want to change the way 
+
+
+## Computer science design 
+
+### Process need to finish current work before shutdown by Interrupt signal
+
