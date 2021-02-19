@@ -21,7 +21,7 @@ calc_options: 因子检验，计算的配置
 ```
 
 ## 开发环境
-- rquser: http://192.168.10.53:30200/admin/login
+- rquser: http://192.168.10.53:30200/admin/login/
 - rquser api document https://yapi.ricequant.com/project/100/interface/api
 
 - 测试环境192.168.10.53   root / Ricemap123
