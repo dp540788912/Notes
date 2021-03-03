@@ -549,4 +549,4 @@ yum makecache
 
 ```
 
-```/dev/sda5
+```/dev/
